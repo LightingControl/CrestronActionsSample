@@ -113,6 +113,7 @@
         <Reference Include="IrVideoServer, Version=8.0.11.0, Culture=neutral, processorArchitecture=MSIL">
           <HintPath>..\packages\CrestronHome.SDK.8.0.0.12\lib\net472\IrVideoServer.dll</HintPath>
         </Reference>
+        <Reference Include="mscorlib" />
         <Reference Include="RADAVReceiver, Version=8.0.0.8, Culture=neutral, processorArchitecture=MSIL">
           <HintPath>..\packages\CrestronHome.SDK.8.0.0.12\lib\net472\RADAVReceiver.dll</HintPath>
         </Reference>
@@ -179,9 +180,33 @@
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+        </Reference>
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Common\Definitions.cs" />
+        <Compile Include="Common\Enums\Schema.cs" />
+        <Compile Include="Common\Error\ErrorResponse.cs" />
+        <Compile Include="Common\Error\Json\ErrorResponseJson.cs" />
+        <Compile Include="Common\Implementation\HttpClient.cs" />
+        <Compile Include="Common\Implementation\HttpClientConfiguration.cs" />
+        <Compile Include="Common\Interfaces\IHttpClient.cs" />
+        <Compile Include="Common\Interfaces\IHttpClientConfiguration.cs" />
+        <Compile Include="Common\Interfaces\IResponse.cs" />
+        <Compile Include="Common\Interfaces\IService.cs" />
+        <Compile Include="Common\Utils.cs" />
+        <Compile Include="LoggingService.cs" />
+        <Compile Include="Logging\Common\LoggingDefinitions.cs" />
+        <Compile Include="Logging\Interface\ILoggingService.cs" />
+        <Compile Include="Logging\Json\PullResponseJson.cs" />
+        <Compile Include="Logging\Json\SubscribeJson.cs" />
+        <Compile Include="Logging\Json\UnsubscribeJson.cs" />
+        <Compile Include="Logging\LoggingService.cs" />
+        <Compile Include="Logging\Response\Entity\LoggingEventEntity.cs" />
+        <Compile Include="Logging\Response\LoggingPullResponse.cs" />
+        <Compile Include="Logging\Response\LoggingSubscribeResponse.cs" />
         <Compile Include="TESTEXT.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
@@ -218,7 +243,7 @@
     </Target>
     -->
     <Target Name="AfterBuild">
-        <Exec Command="$(SolutionDir)\Tools\ManifestUtil\v14\ManifestUtil.exe $(TargetPath)" />
+        <Exec Command="$(SolutionDir)\Tools\ManifestUtil\v18\ManifestUtil.exe $(TargetPath)" />
     </Target>
 
 </Project>

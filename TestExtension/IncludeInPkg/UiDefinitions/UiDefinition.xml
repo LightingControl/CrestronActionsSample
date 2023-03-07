@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <uidefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://prd-use-rad-assets.azurewebsites.net/ExtensionsSchemaDefinition_v1_0.xsd">
   <version ver="1.0" />
-  <tile  alticontext="{tileicon}" status="{titletext}" action="command:toggle" showinhomepage="#false" showinroompage="#true"/>
+  <tile  alticontext="{tileicon}" status="{titletext}" action="command:toggle" showinhomepage="#false" showinroompage="#true" navigation="show:customdeviceMainPage"/>
     <layouts>
     <layout id="customdeviceMainPage" title="^mainPage" isdefaultlayout="#true">
       <controls>
         <subheader id="subheaderev" label="^EVSectionSubheader" />
         <controlgroup>
-         
-          <radialgauge id="batteryChargeid" label="^chargegaugetitle" radialvalue="{batteryLevel}" line1label="{timeremaining}" line2label="{chargestatus}"  />
-
-          <statusandbutton id="statusandbuttonid" label="^name" status="{chargestatus}" buttonlabel="^start" buttonaction="command:startcharging"  statusicon="{ChargeStatusIcon}" />
+         <button id="a" action="command:sendone" label="^TEST1"  />
+          <button id="b" action="command:sendtwo" label="^TEST2"  />
+          
         </controlgroup>
         <subheader id="subheaderlock" label="^LOCKSectionSubheader" />
           <statusandbutton id="statusLocked" label="^LockStatus" status="{lockStatus}" buttonlabel="{lockactiontext}" buttonaction="command:null" navigation="showalert:confirmLockAction"/>

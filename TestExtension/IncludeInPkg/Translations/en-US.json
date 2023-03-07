@@ -1,4 +1,7 @@
 {
+    
+    "TEST1" : "192.168.10.26",
+    "TEST2" : "Httpbin",
     "TDControlsMain": "Car Controls",
     "Car" : "Car",
     

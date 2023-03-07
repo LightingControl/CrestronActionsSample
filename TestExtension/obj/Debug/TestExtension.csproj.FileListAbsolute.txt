@@ -139,6 +139,7 @@ C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\SimplSharpProgrammingI
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\SimplSharpReflectionInterface.dll
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\SimplSharpSQLHelperInterface.dll
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\SimplSharpTimerEventInterface.dll
+C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\System.Net.Http.dll
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\Crestron.SimplSharpPro.AudioDistribution.xml
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\Crestron.SimplSharpPro.CrestronConnected.xml
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
@@ -171,5 +172,6 @@ C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\SimplSharpSQLHelperInt
 C:\Projects\CrestronActionsSample\TestExtension\bin\Debug\SimplSharpTimerEventInterface.xml
 C:\Projects\CrestronActionsSample\TestExtension\obj\Debug\TestExtension.csproj.AssemblyReference.cache
 C:\Projects\CrestronActionsSample\TestExtension\obj\Debug\TestExtension.csproj.CoreCompileInputs.cache
+C:\Projects\CrestronActionsSample\TestExtension\obj\Debug\TestExtension.csproj.CopyComplete
 C:\Projects\CrestronActionsSample\TestExtension\obj\Debug\TestExtension.dll
 C:\Projects\CrestronActionsSample\TestExtension\obj\Debug\TestExtension.pdb
