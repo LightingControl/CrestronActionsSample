@@ -1,0 +1,62 @@
+{
+  "CrestronSerialDeviceApi": {
+    "DeviceSupport": {},
+    "DeviceSupport2": [],
+    "GeneralInformation": {
+      "DeviceType": "AATEST",
+      "Manufacturer": "Lighting Control",
+      "BaseModel": "Action Tests HSWAP",
+      "VersionDate": "2020-10-28 16:03:04.000",
+      "DriverVersion": "4.0.2.0",
+      "SdkVersion": "4.0.0",
+      "Description": "Control Switch",
+      "Guid": "726a7266-f7bb-4723-b4f4-8569ee79c5cc",
+      "ExtensionDeviceData": {
+        "IsExtensionDevice": true,
+        "IsMediaDevice": false,
+        "IsMediaSource": false
+      },
+      "SupportedSeries": [],
+      "SupportedModels": [],
+      "Developer": {
+        "Company": "LCD",
+        "Contact": "Neil Silver",
+        "Email": "support@lightingcontrol.co.uk",
+        "Website": "www.lightingcontrol.co.uk",
+        "PhoneNumber": "-"
+      },
+      "DependencyGroup": ""
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 5,
+        "Protocol": -1,
+        "Baud": -1,
+        "Parity": -1,
+        "HwHandshake": -1,
+        "SwHandshake": -1,
+        "DataBits": 0,
+        "StopBits": -1,
+        "Port": 4444,
+        "EnableAutoPolling": true,
+        "EnableAutoReconnect": true,
+        "TimeBetweenCommands": 250,
+        "ResponseTimeout": 3000,
+        "WaitForResponse": false,
+        "IpProtocol": 0,
+        "IsUserAdjustable": false,
+        "Authentication": {
+          "Type": "None",
+          "Required": false
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": [],
+        "DeviceId": 0
+      }
+    },
+    "UserAttributes": [],
+    "Dependencies": [
+      "LCCore.dll"
+    ]
+  }
+}

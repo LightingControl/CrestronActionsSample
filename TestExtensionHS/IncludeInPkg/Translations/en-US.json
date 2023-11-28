@@ -1,0 +1,67 @@
+{
+    "TDControlsMain": "Car Controls",
+    "Car" : "Car",
+    
+    "SwitchOnLabel": "Car On",
+    "SwitchOffLabel": "Car Off",
+    
+    "TurningOn": "Turning On",
+    "TurningOff": "Turning Off",
+    "DelayLabel": "Delay",
+    
+    
+        
+    "TurnOnMessage" : "Turn %s Off in %s mins",
+    "TurnOffMessage" : "Turn %s On for %s mins",
+
+
+    "OpenCloseTimeSecLabel" : "Set Time for Open and Close Function",
+    
+    "SHTimeDelay" : "Time Delay Off",
+    "TDCancel" : "Time Delay Cancel",
+    "CancelLabel": "Cancel",
+    "YesLabel": "Yes",
+    "firstusewarning" : "First time use configure now",
+    "subheaderText" : "Enter your advanced user pass",
+    "textEntryObscuredLabel" : "Advanced User Password",
+    "reset" : "Reset Driver",
+  
+    "EnableHomeTile": "Display on home page",
+    "EnableHomeTile2nd" : "Enable or disable Home page Tile",
+    "logout" : "Log Out",
+   
+
+
+    "LCCOMMONBELOW" : "LCCOMMONBELOW",
+    "DriverStatus": "Status",
+    "SaveLicenceKey" : "Save New Licence Key", 
+    "HardwareDebugEnable" : "HardwareDebugEnable",
+    "HardwareDebugEnableDescription" : "HardwareDebugEnableDescription",
+    "DriverSettings" : "Driver Settings",
+    "HardwareSettingsText": "Hardware Settings",
+    "HarwareButton" : "Settings",
+    "CurrentHardware" : "Current Hardware",
+    "HardwareHeaderText" : "Current Selected Hardware",
+    "ChangeHardwareText" : "Change Selected Hardware",
+    "HardwarePage" : "Driver Hardware",
+    "DriverSettingsText" : "Driver Settings",
+    "SettingsButton" : "Settings",
+    "LicenceSettingsText" : "Licence Settings",
+    "LicenceConfirm" : "Confirm Licence Action",
+    "LicenceCancel" : "Cancel",
+    "LicencePage" : "Driver Licence",
+    "LicenceheaderText" : "Driver Licence Management",
+    "LicenceKey" : "Driver Licence Key",
+    "Deactivate" : "Driver Activated",
+    "Activate" : "Driver De-Activated",
+    "updateGUI" : "Refresh UI",
+    "Enter" : "Access Settings",
+    "BDEBUG" : "License Info",
+    "Configuration" : "Settings",
+    "SettingsLabel": "Settings",
+    "resetDriverMessage" : "Reset driver to hide all buttons and start setup again",
+    "resetDriverCancelLabel": "Cancel",
+    "resetDriverProceedLabel" : "Confirm",
+    "CheckLicence" : "Check Licence",
+    "LicenceCheckedinToday": "Licence Checked in Today"
+}

@@ -10,14 +10,22 @@
       "DriverVersion": "4.0.2.0",
       "SdkVersion": "4.0.0",
       "Description": "Control Switch",
-      "Guid": "726a7266-f7bb-4723-b4f4-8569ee79c5cc",
+      "Guid": "726a7266-f7aa-4723-b4f4-8569ee79c5cc",
       "ExtensionDeviceData": {
         "IsExtensionDevice": true,
         "IsMediaDevice": false,
         "IsMediaSource": false
       },
       "SupportedSeries": [],
-      "SupportedModels": []
+      "SupportedModels": [],
+      "Developer": {
+        "Company": "LCD",
+        "Contact": "Neil Silver",
+        "Email": "support@lightingcontrol.co.uk",
+        "Website": "www.lightingcontrol.co.uk",
+        "PhoneNumber": "-"
+      },
+      "DependencyGroup": "TEMP"
     },
     "Api": {
       "Communication": {
