@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Crestron.RAD.Common.Attributes.Programming;
 using Crestron.RAD.Common.BasicDriver;
+using Crestron.RAD.Common.Enums;
 using Crestron.RAD.Common.Interfaces;
 using Crestron.RAD.Common.Interfaces.ExtensionDevice;
 using Crestron.RAD.Common.Transports;
@@ -12,6 +13,10 @@ namespace TestExtension
 {
     public class TESTEXTHS : AExtensionDevice , ICloudConnected
     {
+        private bool connectRan;
+        private bool firstload;
+        private string instance;
+
         [ProgrammableOperation("ActionWithParameterNoDef")]
         public void ActionWithParameterNoDef(
             [Display("Time")]
@@ -50,6 +55,9 @@ namespace TestExtension
         }
         protected override IOperationResult DoCommand(string command, string[] parameters)
         {
+            CrestronConsole.PrintLine($"DoCommandCalled {command} Connect Ran:{connectRan} |  FirstLoad:{firstload} | Data: {instance}");
+            
+            
             return null;
         }
 
@@ -98,20 +106,35 @@ namespace TestExtension
         {
             var retrievedData = GetSetting("INSTANCEID");
 
+            instance = "FIRSTLOAD";
+            firstload = true;
+            connectRan = true;
+            
             if (retrievedData != null)
             {
-                string temp = (string)retrievedData;
+                instance = (string)retrievedData;
                 CrestronConsole.PrintLine($"Found Instance Data ! {retrievedData}");
+                ErrorLog.Error($"Found Instance Data ! {retrievedData}");
+                firstload = false;
             }
             else
             {
                 CrestronConsole.PrintLine("HS Did not Find Instance Data !");
-                SaveSetting("INSTANCEID","TESTINSTANCEID");
-                CrestronConsole.PrintLine("HS SAVED  Instance Data !");
+                ErrorLog.Error("HS Did not Find Instance Data !");
+                SaveSetting("INSTANCEID","LOADED");
+                CrestronConsole.PrintLine("HS SAVED  Instance Data ! <SAVED> ");
+                ErrorLog.Error("HS SAVED  Instance Data ! <SAVED> ");
             }
 
+            var key = $"titletext";
+
+            var Title = CreateProperty<string>(new PropertyDefinition(key,key, DevicePropertyType.String));
+            Title.Value = $"FL:{firstload} : {instance}";
+            Commit();
+            Connected = true;
             base.Connect();
         }
+        
     }
     public class LCBaseTransport : ATransportDriver
     {
